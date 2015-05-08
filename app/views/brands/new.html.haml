@@ -1,0 +1,7 @@
+.row
+  .col-xs-12
+    %h1 Add a Brand
+    = simple_form_for @brand do |f|
+      = f.input :name, label: "Brand Name"
+      = f.input :set_standard_price, label: "Collection Price", hint: "This is the discounted price for the full set of albums."
+      = f.button :submit
